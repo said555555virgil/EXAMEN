@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .module {
+            background-color: #eee;
+            padding: 20px;
+            border-radius: 6px;
+        }
+        .module-primary {
+            background-color: #e0b0ff; /* Light Purple */
+            color: #fff;
+            text-align: center;
+        }
+        .module-secondary {
+            background-color: #ffe082; /* Light Orange */
+        }
+        .module-accent {
+            background-color: #f0f8ff; /* Alice Blue */
+            text-align: center;
+        }
+        h2 {
+            color: #555;
+            margin-top: 0;
+        }
+        h3 {
+            color: #777;
+            margin-top: 0;
+        }
+        .button {
+            background-color: #ffc107; /* Amber */
+            color: #000;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .star {
+            color: gold;
+            font-size: 1.2em;
+        }
+        .highlight {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .followers-card {
+            background-color: #d1c4e9; /* Light Lavender */
+            color: #333;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .arrow-up {
+            color: green;
+        }
+        .chart {
+            width: 100%;
+            max-height: 100px; /* Adjust as needed */
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+        .bar {
+            background-color: #9575cd; /* Medium Purple */
+            color: white;
+            padding: 5px;
+            border-radius: 3px 3px 0 0;
+            text-align: center;
+            font-size: 0.8em;
+        }
+        .most-active {
+            color: #fdd835; /* Light Yellow */
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="module module-secondary">
+            <h2>Crea y programa contenido más rápido.</h2>
+            <img src="https://res-console.cloudinary.com/dymzqujsz/media_explorer_thumbnails/ae3edf94e11f3a8fd2064441d0ccb64b/detailed" alt="" style="width: 30px; margin-top: 10px;">
+        </div>
+        <div class="module module-primary">
+            <h2>Social Media 10x Más Rápido con IA</h2>
+            <img src="https://res-console.cloudinary.com/dymzqujsz/media_explorer_thumbnails/6007297227b9b67e796136a87a293ab7/detailed" alt="">
+            <p>Más de 4,000 reseñas de 5 estrellas</p>
+        </div>
+        <div class="module module-accent">
+            <h2>Programa para redes sociales.</h2>
+            <img src="https://res-console.cloudinary.com/dymzqujsz/media_explorer_thumbnails/26a9306216b0226f7c6d120e34f4c4cf/detailed" alt="">
+            <h3>Mejor Momento para Publicar</h3>
+            <div style="display: flex; gap: 5px; margin-bottom: 10px; justify-content: center;">
+                <span style="background-color: #eee; padding: 5px; border-radius: 3px;">Lun</span>
+                <span style="background-color: #eee; padding: 5px; border-radius: 3px;">Mar</span>
+                <span style="background-color: #eee; padding: 5px; border-radius: 3px;">Mié</span>
+                <span style="background-color: #eee; padding: 5px; border-radius: 3px;">Jue</span>
+            </div>
+            <div class="chart">
+                <div class="bar" style="height: 20%;">2</div>
+                <div class="bar" style="height: 50%;">8</div>
+                <div class="bar" style="height: 100%;">12</div>
+                <div class="bar" style="height: 70%;">9</div>
+            </div>
+            <p class="most-active">Más Activo</p>
+            <p style="font-size: 0.9em;">Optimiza los horarios de publicación para obtener el momento perfecto para tu audiencia.</p>
+        </div>
+        <div class="module module-secondary">
+            <h2>Escribe tu contenido usando IA.</h2>
+            <img src="https://res-console.cloudinary.com/dymzqujsz/media_explorer_thumbnails/8ed8faf40c30a570a596ef195b0e44b9/detailed" alt="Screenshot de IA escribiendo contenido" class="screenshot">
+        </div>
+        <div class="module module-accent">
+            <h3>@YourCo</h3>
+            <p style="font-size: 0.8em;">1.2M Seguidores</p>
+            <h2>Gestiona múltiples cuentas y plataformas.</h2>
+            <img src="https://res-console.cloudinary.com/dymzqujsz/media_explorer_thumbnails/d3f241d36891f66eab49bf36f2d5dd76/detailed" alt="Íconos de múltiples cuentas" style="width: 80%; margin-top: 10px;">
+        </div>
+        <div class="module module-accent" style="text-align: left;">
+            <h2>Mantén una programación de publicaciones consistente.</h2>
+            <div style="background-color: #9fa8da; color: white; padding: 10px; border-radius: 4px; display: inline-block;">
+                Agosto 2024
+            </div>
+            <div style="background-color: #c5cae9; color: #333; padding: 5px; border-radius: 2px; display: inline-block; margin-left: 5px;">
+                Semana 1
+            </div>
+        </div>
+        <div class="module module-accent" style="text-align: center;">
+            <h2 class="highlight">&gt;56%</h2>
+            <p>crecimiento de audiencia más rápido</p>
+            <img src="https://res-console.cloudinary.com/dymzqujsz/media_explorer_thumbnails/da1be70fd7c0242e98f35cf803797325/detailed" alt="Gráfico de crecimiento de audiencia" style="width: 70%; margin-top: 10px;">
+        </div>
+        <div class="module followers-card">
+            <h3>Seguidores Crecieron</h3>
+            <img src="https://res-console.cloudinary.com/dymzqujsz/media_explorer_thumbnails/6e9df5fc521ac29d97114a6ac5061e4b/detailed" alt="">
+            <p style="font-size: 1.2em;">20,642 <span class="arrow-up">↑</span></p>
+            <p style="font-size: 0.8em;">De</p>
+            <p style="font-size: 1.2em;">89,532</p>
+        </div>
+        <div class="module module-accent" style="text-align: left;">
+            <h2>Crece seguidores con contenido constante.</h2>
+            <img src="https://res-console.cloudinary.com/dymzqujsz/media_explorer_thumbnails/5b90dbed3eeb8d136fc62a3620a25dfb/detailed" alt="Ilustración de creación de contenido" style="width: 80%; margin-top: 10px;">
+        </div>
+    </div>
+</body>
+</html>
