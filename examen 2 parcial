@@ -1,0 +1,103 @@
+from datetime import datetime
+def agregar_estudiante(estudiantes, nombre, edad,notas)
+             estudiante={
+                       'nombre':.nombre,
+                        'apellido':.apellido,
+                         'edad':.edad,
+                          'notas':notas,
+                           'caracteres_nombre':0,#Inicializado en 0, se calculara mas tarde
+                             'ano_nacimiento':0#Inicializado en 0,se calculara mas tarde                        
+         }
+         estudiantes.append(estudiante)
+         def ordenar_estudiantes(estudiantes):
+             pass
+         def clasificar_rendimiento(estudiantes):
+             pass
+         def contar_caracteres_nombre(estudiantes):
+             pass
+         def determinar_fecha_nacimiento(estudiantes, ano_actual=2025)
+             pass
+         def presentar_estudiantes(estudiantes):
+             pass
+          estudiantes=[]
+agregar_estudiant(estudiantes, "juan", "perez", 25, [85, 90, 78])
+agregar_estudiante(estudiantes, "ana", "gomez", 42,  [65, 70, 75])
+agregar_estudiante(estudiantes, "luis", "martinez", 22, [88, 92, 80])
+agregar_estudiantes(estudiantes, "jose", "molina", 20, [40, 50, 60]
+
+from datetime import datetime
+def agregar_estudiante(estudiantes, nombre, apellido, edad, notas):
+    """
+    Agrega un nuevo estudiante a la lista de estudiantes.
+
+    Args:
+        estudiantes (list): Lista de estudiantes.
+        nombre (str): Nombre del estudiante.
+        apellido (str): Apellido del estudiante.
+        edad (int): Edad del estudiante.
+        notas (list): Lista de notas del estudiante.
+    """
+    estudiante = {
+        'nombre': nombre,
+        'apellido': apellido,
+        'edad': edad,
+        'notas': notas,
+        'caracteres_nombre': len(nombre),
+        'ano_nacimiento': datetime.now().year - edad
+    }
+    estudiantes.append(estudiante)
+
+def ordenar_estudiantes(estudiantes):
+    """
+    Ordena la lista de estudiantes por apellido.
+
+    Args:
+        estudiantes (list): Lista de estudiantes.
+    """
+    estudiantes.sort(key=lambda x: x['apellido'])
+
+def clasificar_rendimiento(estudiantes):
+    """
+    Clasifica el rendimiento de los estudiantes en 'Alto', 'Medio' o 'Bajo'
+    según el promedio de sus notas.
+
+    Args:
+        estudiantes (list): Lista de estudiantes.
+    """
+    for estudiante in estudiantes:
+        promedio = sum(estudiante['notas']) / len(estudiante['notas'])
+        if promedio >= 85:
+            estudiante['rendimiento'] = 'Alto'
+        elif promedio >= 70:
+            estudiante['rendimiento'] = 'Medio'
+        else:
+            estudiante['rendimiento'] = 'Bajo'
+
+def presentar_estudiantes(estudiantes):
+    """
+    Muestra la información de los estudiantes.
+
+    Args:
+        estudiantes (list): Lista de estudiantes.
+    """
+    for estudiante in estudiantes:
+        print(f"{estudiante['nombre']} {estudiante['apellido']}, Edad: {estudiante['edad']}, "
+              f"Rendimiento: {estudiante.get('rendimiento', 'No clasificado')}, "
+              f"Nombre tiene {estudiante['caracteres_nombre']} caracteres, "
+              f"Año de nacimiento: {estudiante['ano_nacimiento']}")
+        
+estudiantes = []
+
+agregar_estudiante(estudiantes, "Juan", "Pérez", 25, [85, 90, 78])
+agregar_estudiante(estudiantes, "Ana", "Gómez", 42, [65, 70, 75])
+agregar_estudiante(estudiantes, "Luis", "Martínez", 22, [88, 92, 80])
+agregar_estudiante(estudiantes, "José", "Molina", 20, [40, 50, 60])
+
+
+ordenar_estudiantes(estudiantes)
+
+
+clasificar_rendimiento(estudiantes)
+
+
+presentar_estudiantes(estudiantes)
